@@ -17,35 +17,88 @@ body {
     max-width: 980px;
   }
   
-  .grid {
+  .grid1 {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
+  .grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas con tamaño fraccionado */
+    grid-template-rows: repeat(auto, auto); /* 4 filas con tamaño automático */
+  }
+
   
+  
+  aside {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding-left: 10px;
+  }
+
   nav {
     background-color: #000;
     padding: .5em;
+    position:sticky;
+    top:0;
+   
   }
   
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    
   }
   
   nav a {
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
+   
   }
-  
+ 
+
+
   .photos {
+  
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual tamaño */
+    grid-template-rows: auto;
+    gap: 1px;
   }
+
+ 
+  .photos li img {
+      width: auto; /* Asegura que las imágenes ocupen todo el espacio disponible dentro de su contenedor */
+      height: auto; /* Mantiene la proporción de la imagen */
+      
+  }
+  
 
   .feature {
       width: 200px;
+      float: left;
+      padding-right: 10px;
+      padding-bottom: 10px;
   }
+
+  h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+   
+  }
+
+ 

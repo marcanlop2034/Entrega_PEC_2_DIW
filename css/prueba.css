@@ -1,0 +1,176 @@
+/* General setup */
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'),
+         url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+   
+}
+
+@font-face {
+    font-family: 'MiFuenteTitulos';
+    src: url('../fonts/Lato/Lato-Black.ttf') format('truetype'),
+         url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    /* font-family: 'MiFuente', sans-serif; */
+    font-family: 'MiFuente', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    /* styles */
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-top: 0;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+   
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  nav > a {
+    
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+
+
+/* General styling */
+h1, h2 ,h3{
+    font-family: 'MiFuenteTitulos';
+    
+    font-size: 3.2rem;
+}
+header, footer {
+    text-align: center;
+    padding: 3rem;
+    margin: 0;
+    letter-spacing: .5rem;
+}
+footer {
+    letter-spacing: 0.01rem;
+    background-color: #cfcece;
+    padding: 2rem;
+}
+section, aside, nav {
+    letter-spacing: .1rem;
+    word-spacing: .4rem;
+}
+h2 + p {
+    text-indent: 2rem;
+}
+
+/* Links styling */
+section a[href*="https://"] {
+   /* to align icon img to right */
+   background: url(assets/external-link-icon.png) 100% 0 no-repeat;
+    background-size: 15px 15px;
+    padding-right: 19px;
+}
+section a, aside a {
+    outline: none;
+}
+section a:link, aside a:link {
+    color: #a26;
+}
+section a:visited, aside a:visited {
+    color: blue;
+}
+section a:focus, aside a:focus {
+    background-color: #bbbcbe;
+}
+section a:hover, aside a:hover {
+    color: rgb(230, 26, 128);
+    text-decoration: none;
+}
+section a:active, aside a:active {
+    color: rgb(17, 167, 24);
+}
+
+/* Lists styling */
+section ul, aside ul {
+    list-style: square;
+}
+
+/* Navigation styling */
+nav ul li{
+    border: 2px solid #a26;
+    font-size: 1.8rem;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    padding: 2rem 3rem;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #a26;
+    font-weight: light;
+}
+nav ul li:hover, nav ul li:hover a{
+    background-color: rgb(173, 76, 125);
+    color: antiquewhite;
+}
+nav ul li:active, nav ul li:active a{
+    background-color: rgba(192, 162, 162, 0.945);
+    color: rgb(47, 44, 46);
+    font-weight: bold;
+}
+
+/* Footer styles */
+.author-name, .project-credit {
+    color: #a66;
+    font-weight: bold;
+}
+.author-name:hover, .project-credit:hover {
+    text-decoration: none;
+    color: #4078c0;
+}
