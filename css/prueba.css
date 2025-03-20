@@ -117,6 +117,11 @@ section a[href*="https://"] {
 section a, aside a {
     outline: none;
 }
+#topCourse ul li a, #menu a {
+    color: #a26;
+}
+
+
 section a:link, aside a:link {
     color: #a26;
 }
@@ -173,4 +178,11 @@ nav ul li:active, nav ul li:active a{
 .author-name:hover, .project-credit:hover {
     text-decoration: none;
     color: #4078c0;
+}
+
+
+/* Personalizacion Ejercicio */
+
+#menu a {
+    border: 2px solid #a66;
 }
