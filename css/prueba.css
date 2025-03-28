@@ -17,6 +17,10 @@
     font-style: normal;
 }
 
+:root {
+    --primary-color: #a66;
+    --secoundary-color:  yellow;
+}
 
 html {
     /* font-family: 'MiFuente', sans-serif; */
@@ -24,6 +28,7 @@ html {
     font-size: 10px;
     margin: 0;
     padding: 0;
+    
 }
 
 * {
@@ -108,14 +113,16 @@ h2 + p {
 /* Links styling */
 section a[href*="https://"] {
    /* to align icon img to right */
-   background: url(assets/external-link-icon.png) 100% 0 no-repeat;
+    background: url(assets/external-link-icon.png) 100% 0 no-repeat;
     background-size: 15px 15px;
     padding-right: 19px;
 }
+
 section a, aside a {
     outline: none;
 }
-#topCourse ul li a, #menu a {
+
+#topCourse ul li a, #menu a, a {
     color: #a26;
 }
 
@@ -144,7 +151,7 @@ section ul, aside ul {
 
 /* Navigation styling */
 nav ul li{
-    border: 2px solid #a26;
+    border: 2px solid var(--primary-color);
     font-size: 1.8rem;
     list-style: none;
     text-align: center;
@@ -155,12 +162,12 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #a26;
+    color: var(--primary-color);
     font-weight: light;
 }
 nav ul li:hover, nav ul li:hover a{
-    background-color: rgb(173, 76, 125);
-    color: antiquewhite;
+    background-color: var(--primary-color);
+    color: white;
 }
 nav ul li:active, nav ul li:active a{
     background-color: rgba(192, 162, 162, 0.945);
@@ -182,5 +189,17 @@ nav ul li:active, nav ul li:active a{
 /* Personalizacion Ejercicio */
 
 #menu a {
+    
     border: 2px solid #a66;
 }
+
+img {
+    height: 15px;
+    width: 15px;
+}
+
+/* Colores armonizados */
+
+
+
+

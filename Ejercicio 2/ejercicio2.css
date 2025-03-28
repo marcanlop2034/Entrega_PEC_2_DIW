@@ -1,13 +1,22 @@
 body {
     background-color: #fff;
-    color: #333;
+    /*color: #333; */
+    color: var(--primary-color);
     margin: 0;
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
+
+  :root {
+    --primary-color: black;
+    --secoundary-color:  yellow; /* En la revisión final si no afecta elimiar */
+
   }
 
   img {
       max-width: 100%;
       display: block;
+      margin-right: 10px;
+      margin: 1px;
   }
   
   .logo {
@@ -15,6 +24,7 @@ body {
     padding: 50px 20px;
     margin: 0 auto;
     max-width: 980px;
+   padding-left: 200px;
   }
   
   .grid1 {
@@ -22,19 +32,25 @@ body {
     padding: 0 20px;
     max-width: 980px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
   .grid {
-    margin: 0 auto;
-    padding: 0 20px;
+     /*margin: 0 auto;
+    padding: 0 20px; */
+    margin: 0 200px;
+    
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 columnas con tamaño fraccionado */
+    grid-template-columns: 3fr 1fr; /* 3 columnas con tamaño fraccionado */
     grid-template-rows: repeat(auto, auto); /* 4 filas con tamaño automático */
   }
 
+  article {
+    margin-right: 15px;
+    
+  }
   
-  
-  aside {
+
+  .aside {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -55,7 +71,7 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
    
     
   }
@@ -72,14 +88,13 @@ body {
   .photos {
   
     list-style: none;
-    margin: 0;
+    margin-top: 25px;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual tamaño */
     grid-template-rows: auto;
-    gap: 1px;
+    gap: 2px;
   }
-
  
   .photos li img {
       width: auto; /* Asegura que las imágenes ocupen todo el espacio disponible dentro de su contenedor */
@@ -98,6 +113,11 @@ body {
   h2 {
     padding-bottom: 0;
     margin-bottom: 0;
+   
+  }
+
+  .sinFormato {
+    color: red;
    
   }
 
